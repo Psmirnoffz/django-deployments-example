@@ -1,0 +1,9 @@
+{% extends "auth_app/base.html" %}
+{% block body_block %}
+    <div class="jumbotron">
+        <h1>Home Page</h1>
+        {% if user.is_authenticated %}
+            <p>This text can be seen only by authenticated users</p>
+        {% endif %}
+    </div>
+{% endblock %}
